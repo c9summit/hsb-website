@@ -25,11 +25,41 @@
 
     </div>
 
+    <section id="info">
+        <div class="content">
+          <h2>drive</h2>
+          <span id="content_drive">drive. To take the ball to the basket</span>
+          <span id="content_drive1">drive. To face forward, pursue or
+            "rush against"</span>
+          <span id="content_drive2">drive. A planned effort to acheive something</span>
+          <span id="blank"> </span>
+          <span></span>
+          <span></span>
+          <span id="content_main">drive is a basketball stats calculator which
+            enables young athletes to feel like professionals. Athletes enter
+            their stats
+            and based on their stats they can be given feedback. This results in
+            trainings being focused on what needs to be focused on resulting in
+            improvement on the court.</span>
+          <a href="#" class="button1">RETURN TO TOP</a>
+  
+        </div>
+  
+      </section>
 
-
-
-
-
+      <script>
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault()
+            $('html, body').animate(
+                {
+                    scrollTop: $($(this).attr('href')).offset().top,
+                },
+                500,
+                'linear'
+            )
+        })
+    </script>
 
 
   </body>
+  </html>
