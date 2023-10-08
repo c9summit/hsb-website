@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .homepage{
+    position: absolute;
+    top: 60%;
+    right: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .homepage a{
+    color: #8c9197;
+    text-decoration: none;
+    padding: 10px 25px;
+    background: transparent;
+    border: 3px solid;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+    color: #8c9197;
+    font-family: 'planet_kosmosregular', Arial, sans-serif;
+  }
+
+  .button {
+    color: #8c9197;
+    border: 3px solid #8c9197;
+    font-size: 1.2em;
+    font-weight: bold;
+    min-width: 150px;
+    text-decoration: none;
+}
+
+.button1 {
+  color: black;
+  border: 3px solid #8c9197;
+  font-size: 1.2em;
+  font-weight: bold;
+  min-width: 150px;
+  text-decoration: none;
+}
+
+.homepage .button:hover {
+    background-color: #000;
+    border: 3px solid ;
+    color: #8c9197;
+}
