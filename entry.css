@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -115,3 +116,92 @@
   }  
 
   :root { scroll-behavior: smooth; }
+
+  @media only screen and (max-width: 490px) {
+    .content {
+      position: relative;
+      top: 250px;
+      left: 00px;
+      margin: 0 auto;
+      max-width: 960px;
+      width: 300px;
+      height: 150px;
+      font-size: 15px
+    }
+  
+    .homepage a{
+      color: #8c9197;
+      text-decoration: none;
+      padding: 5px 12px;
+      background: transparent;
+      border: 3px solid;
+      border-radius: 50px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .btn{
+      position: static;
+      top:70px;
+    }
+
+  }
+
+  @media only screen and (max-width: 393px) {
+    .content {
+      position: relative;
+      top: 250px;
+      left: 00px;
+      margin: 0 auto;
+      max-width: 960px;
+      width: 300px;
+      height: 150px;
+      font-size: 15px
+    }
+  
+    .homepage a{
+      color: #8c9197;
+      text-decoration: none;
+      padding: 3px 7px;
+      background: transparent;
+      border: 3px solid;
+      border-radius: 50px;
+      outline: none;
+      cursor: pointer;
+    }
+
+  }
+
+  @media only screen and (max-width: 320px) {
+    .content {
+      position: relative;
+      top: 250px;
+      left: 00px;
+      margin: 0 auto;
+      max-width: 960px;
+      width: 200px;
+      height: 150px;
+      font-size: 15px
+    }
+  
+    .homepage a{
+      color: #8c9197;
+      text-decoration: none;
+      padding: 3px 7px;
+      background: transparent;
+      border: 3px solid;
+      border-radius: 50px;
+      outline: none;
+      cursor: pointer;
+      font-size:9px;
+    }
+
+    h1{
+      font-size: 40px;
+      margin: 10px 0 30px;
+      line-height: 80px;
+      color: #8c9197;
+      font-family: 'planet_kosmosregular', Arial, sans-serif;
+    }
+
+  }
