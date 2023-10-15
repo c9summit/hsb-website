@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Beginner - drive</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+  </head>
+  <body>
+    <style type="text/css">
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(bg-image.jpg);
+    background-size: cover;
+}
+
+      .container {
+        width: 100%;
+        max-width: 650px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 28px;
+        border-radius: 10px;
+        box-shadow: inset -2px 2px 2px white;
+        margin-left: 300px; 
+      }
+
+      .form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn input:hover{
+    background: rgba(56, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+#results{
+    font-size: 20px;
+    color:white;
+    line-height:1.8;
+
+}
+
+@font-face {
+  font-family: 'planet_kosmosregular';
+  src: url('plank___-webfont.woff2') format('woff2'),
+       url('plank___-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+body{
+  background: rgb(233, 233, 233);
+}
+
+      .container1 {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        height: 100vh;
+      }
+
+      nav {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        bottom: 0;
+        width: 280px;
+        height: 100vh;
+        background: #fff;
+      }
+
+      .navbar{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo{
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logo h1{
+  font-size: 40px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+  color: darkred;
+  font-family: 'planet_kosmosregular', Arial, sans-serif;
+  margin-left: 1rem;
+}
+
+ul{
+  margin: 0 auto;
+}
+li{
+  padding-bottom: 2rem;
+}
+li a{
+  font-size: 16px;
+  color: rgb(85, 83, 83);
+}
+
+nav i{
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.logout{
+  position: absolute;
+  bottom: 20px;
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
+    </style>
+
+    <div class="container1">
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <h1>drive</h1>
+          </div>
+          <ul>
+            <li><a href="index.php">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">Dashboard</span>
+              </a>
+              </li>
+              <li><a href="beginner.html">
+                <i class="fas fa-basketball-ball"></i>
+                <span class="nav-item">Beginner</span>
+              </a>
+              </li>
+              <li><a href="download.html">
+                <i class="fas fa-download"></i>
+                <span class="nav-item"> Download</span>
+              </a>
+            </li>
+              <li><a href="logout.php" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Logout</span>
+              </a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h1 class="form-title">Beginner</h1>
+      <form id="stats-form">
+        <div class="main-user-info">
+            <div class="user-input-box">
+              <label for="total-points">Total Points</label>
+              <input type="number"
+                      id="total-points"
+                      placeholder="Enter Total Points" required>
+            </div>
+            <div class="user-input-box">
+              <label for="total-rebounds">Total Rebounds</label>
+              <input type="number"
+                      id="total-rebounds"
+                      placeholder="Enter Total Rebounds" required>
+            </div>
+            <div class="user-input-box">
+              <label for="total-assists">Total Assists</label>
+              <input type="number"
+                      id="total-assists"
+                      placeholder="Enter Total Assists" required>
+            </div>
+            <div class="user-input-box">
+              <label for="total-steals">Total Steals</label>
+              <input type="number"
+                      id="total-steals"
+                      placeholder="Enter Total Steals" required>
+            </div>
+            <div class="user-input-box">
+              <label for="total-blocks">Total Blocks</label>
+              <input type="number"
+                      id="total-blocks"
+                      placeholder="Enter Total Blocks" required>
+            </div>
+            <div class="user-input-box">
+              <label for="games-played">Games Played</label>
+              <input type="number"
+                      id="games-played"
+  
+                      placeholder="Enter Games Played" required>
+            </div>
+          </div>
+     
+          <div class="form-submit-btn">
+            <input type="submit">
+          </div>
+      </form>
+      <div id="results">
+
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('stats-form');
+    const resultsDiv = document.getElementById('results');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const totalPoints = parseInt(document.getElementById('total-points').value);
+        const totalRebounds = parseInt(document.getElementById('total-rebounds').value);
+        const totalAssists = parseInt(document.getElementById('total-assists').value);
+        const totalSteals = parseInt(document.getElementById('total-steals').value);
+        const totalBlocks = parseInt(document.getElementById('total-blocks').value);
+        const gamesPlayed = parseInt(document.getElementById('games-played').value);
+
+        const pointsPerGame = totalPoints / gamesPlayed;
+        const reboundsPerGame = totalRebounds / gamesPlayed;
+        const assistsPerGame = totalAssists / gamesPlayed;
+        const stealsPerGame = totalSteals / gamesPlayed;
+        const blocksPerGame = totalBlocks / gamesPlayed;
+
+        resultsDiv.innerHTML = `
+            <p>Points Per Game: ${pointsPerGame.toFixed(2)}</p>
+            <p>Rebounds Per Game: ${reboundsPerGame.toFixed(2)}</p>
+            <p>Assists Per Game: ${assistsPerGame.toFixed(2)}</p>
+            <p>Steals Per Game: ${stealsPerGame.toFixed(2)}</p>
+            <p>Blocks Per Game: ${blocksPerGame.toFixed(2)}</p>
+        `;
+    });
+});
+
+document.getElementById('results') 
+                    .innerHTML = css_data; 
+    </script>
+  </body>
+</html>
