@@ -11,7 +11,7 @@ session_start();
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>DASHBOARD</title>
+    <title>Dashboard - drive</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -120,6 +120,51 @@ nav i{
   align-items: center;
   justify-content: center;
 }
+
+.greeting{
+  font-size:30px;
+  position:absolute;
+}
+
+@media only screen and (max-width:415px){
+  nav {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        bottom: 0;
+        width: 100px;
+        height: 100vh;
+        background: #fff;
+      }
+
+      .logo h1{
+    font-size: 15px;
+     margin: 10px 0 30px;
+  line-height: 80px;
+  color: darkred;
+  font-family: 'planet_kosmosregular', Arial, sans-serif;
+  margin-left: 1rem;
+  
+}
+
+.greeting{
+  font-size:20px;
+  position:absolute;
+  top:300px;
+  right:70px;
+}
+
+.nav-item{
+    display: none;
+}
+
+nav i{
+  width: 100px;
+  font-size: 18px;
+  text-align: center;
+}
+}
+
     </style>
 
     <div class="hero">
@@ -130,7 +175,7 @@ nav i{
 
     <section id="dash">
       <div class="display">
-        <div class='greeting'>Hello <?php echo $user_data['user_name']; ?></div>
+        <div class='greeting'>Welcome <?php echo $user_data['user_name']; ?></div>
       </div>
     </section>
 

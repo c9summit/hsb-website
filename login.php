@@ -53,7 +53,7 @@ session_start();
 
 	<style type="text/css">
 body {
-	background-color: #cccccc;
+	background-color: darkred;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -82,7 +82,7 @@ h2 {
 	background-color: #8c9197;
 	border-radius: 20px;
 	text-align: center;
-    position:relative;
+    
 }
 
 .login-header {
@@ -97,6 +97,7 @@ h2 {
 
 .input-box .input-field {
 	width: 80%;
+	max-width: 100%;
 	height: 60px;
 	font-size: 17px;
 	padding: 0 25px;
@@ -105,6 +106,7 @@ h2 {
 	border: none;
 	outline: none;
 	transition: .3s;
+	box-sizing:border-box;
 }
 
 .input-field::placeholder {

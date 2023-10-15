@@ -39,7 +39,7 @@ session_start();
 
 	<style type="text/css">
 body {
-	background-color: #cccccc;
+	background-color: #8c9197;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -65,7 +65,7 @@ h2 {
 	max-width: 440px;
 	padding: 30px;
 	box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
-	background-color: #8c9197;
+	background-color: darkred;
 	border-radius: 20px;
 	text-align: center;
     position:relative;

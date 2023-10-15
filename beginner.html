@@ -29,8 +29,6 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: url(bg-image.jpg);
-    background-size: cover;
 }
 
       .container {
@@ -210,21 +208,57 @@ nav i{
         justify-content: space-between;
     }
 
-    .gender-category{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .main-user-info{
         max-height: 380px;
         overflow: auto;
     }
-
     .main-user-info::-webkit-scrollbar{
         width: 0;
     }
 }
+    @media only screen and (max-width:415px){
+        nav {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        bottom: 0;
+        width: 100px;
+        height: 100vh;
+        background: #fff;
+      }
+
+      .logo h1{
+    font-size: 15px;
+     margin: 10px 0 30px;
+  line-height: 80px;
+  color: darkred;
+  font-family: 'planet_kosmosregular', Arial, sans-serif;
+  margin-left: 1rem;
+  
+}
+
+.container {
+        width: 100%;
+        max-width: 650px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 28px;
+        border-radius: 10px;
+        box-shadow: inset -2px 2px 2px white;
+        margin-left: 100px; 
+        height:750px;
+      }
+      nav i{
+  width: 100px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.nav-item{
+    display: none;
+}
+
+    }
+
     </style>
 
     <div class="container1">
@@ -246,7 +280,7 @@ nav i{
               </li>
               <li><a href="download.html">
                 <i class="fas fa-download"></i>
-                <span class="nav-item"> Download</span>
+                <span class="nav-item">Downlaod</span>
               </a>
             </li>
               <li><a href="logout.php" class="logout">
